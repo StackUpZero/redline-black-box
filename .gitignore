@@ -1,0 +1,17 @@
+# Godot 4
+.godot/
+
+# Imported assets cache
+.import/
+
+# Exported builds
+exports/
+builds/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+*.tmp
+*.bak
