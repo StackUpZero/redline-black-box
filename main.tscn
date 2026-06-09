@@ -2,6 +2,12 @@
 
 [ext_resource type="Script" uid="uid://cqyirrjrl821y" path="res://player.gd" id="1_ig7tw"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(32, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
+size = Vector2(96, 32)
+
 [node name="Main" type="Node2D" unique_id=160579279]
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=234733336]
@@ -11,4 +17,20 @@ script = ExtResource("1_ig7tw")
 offset_left = -16.0
 offset_top = -16.0
 offset_right = 16.0
+offset_bottom = 16.0
+color = Color(13.614482, 12.217365, 0.0005914307, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1616663141]
+shape = SubResource("RectangleShape2D_0xm2m")
+
+[node name="Wall" type="StaticBody2D" parent="." unique_id=1808360606]
+position = Vector2(300, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall" unique_id=786164761]
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="ColorRect" type="ColorRect" parent="Wall" unique_id=1036453554]
+offset_left = -48.0
+offset_top = -16.0
+offset_right = 48.0
 offset_bottom = 16.0
