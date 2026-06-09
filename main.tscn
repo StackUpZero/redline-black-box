@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cqow47bch5ocs"]
+
+[ext_resource type="Script" uid="uid://cqyirrjrl821y" path="res://player.gd" id="1_ig7tw"]
+
+[node name="Main" type="Node2D" unique_id=160579279]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=234733336]
+script = ExtResource("1_ig7tw")
+
+[node name="ColorRect" type="ColorRect" parent="Player" unique_id=2126917089]
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
