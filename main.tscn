@@ -5,18 +5,55 @@
 [ext_resource type="PackedScene" uid="uid://bsxl5vryajij2" path="res://black_box.tscn" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://ck3uixh0y53un" path="res://black_box.gd" id="4_lquwl"]
 [ext_resource type="Script" uid="uid://bj1d11g2n5g8k" path="res://game_manager.gd" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://ckbrm5unafxyt" path="res://extraction_zone.tscn" id="6_272bh"]
+[ext_resource type="Script" uid="uid://dvmkmjnt7jcry" path="res://extraction_zone.gd" id="7_5vw27"]
 
 [node name="Main" type="Node2D" unique_id=160579279]
 
-[node name="Player" parent="." unique_id=1152195455 instance=ExtResource("1_0xm2m")]
-position = Vector2(88, 132)
-
 [node name="Wall" parent="." unique_id=2114677536 instance=ExtResource("2_0xm2m")]
-position = Vector2(90, 30)
+position = Vector2(413, 39)
+scale = Vector2(4.485, 1)
+
+[node name="Wall2" parent="." unique_id=351299445 instance=ExtResource("2_0xm2m")]
+position = Vector2(628, 239)
+rotation = 1.5707964
+scale = Vector2(4.565, 1)
+
+[node name="Wall3" parent="." unique_id=1163538005 instance=ExtResource("2_0xm2m")]
+position = Vector2(213, 104)
+rotation = 1.5707964
+
+[node name="Wall4" parent="." unique_id=1344511438 instance=ExtResource("2_0xm2m")]
+position = Vector2(387, 191.00002)
+rotation = 1.5707964
+scale = Vector2(1.7, 1.005)
+
+[node name="Wall5" parent="." unique_id=297322660 instance=ExtResource("2_0xm2m")]
+position = Vector2(366, 265)
+scale = Vector2(2.875, 1)
+
+[node name="Wall8" parent="." unique_id=448788409 instance=ExtResource("2_0xm2m")]
+position = Vector2(418, 442)
+scale = Vector2(4.575, 1)
+
+[node name="Wall6" parent="." unique_id=950571504 instance=ExtResource("2_0xm2m")]
+position = Vector2(213, 297)
+rotation = 1.5707964
+
+[node name="Wall7" parent="." unique_id=1751161312 instance=ExtResource("2_0xm2m")]
+position = Vector2(213, 392)
+rotation = 1.5707964
+
+[node name="Player" parent="." unique_id=1152195455 instance=ExtResource("1_0xm2m")]
+position = Vector2(158, 197)
 
 [node name="BlackBox" parent="." unique_id=1249540428 instance=ExtResource("3_1bvp3")]
-position = Vector2(211, 82)
+position = Vector2(273, 354)
 script = ExtResource("4_lquwl")
 
 [node name="GameManager" type="Node" parent="." unique_id=1485045986]
 script = ExtResource("5_lquwl")
+
+[node name="ExtractionZone" parent="." unique_id=1757362775 instance=ExtResource("6_272bh")]
+position = Vector2(103, 193)
+script = ExtResource("7_5vw27")

@@ -6,7 +6,6 @@ extends CharacterBody2D
 # 200 - is the stored value 
 var speed = 200
 
-func _ready():
 # func is a piece of code you can call later to do a job
 # better than writing everything inline
 # _physics_process - is a Godot function that runs at the physics update rate
