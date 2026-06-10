@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://w0pb0847fl4m" path="res://wall.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bsxl5vryajij2" path="res://black_box.tscn" id="3_1bvp3"]
 [ext_resource type="Script" uid="uid://ck3uixh0y53un" path="res://black_box.gd" id="4_lquwl"]
+[ext_resource type="Script" uid="uid://bj1d11g2n5g8k" path="res://game_manager.gd" id="5_lquwl"]
 
 [node name="Main" type="Node2D" unique_id=160579279]
 
@@ -16,3 +17,6 @@ position = Vector2(90, 30)
 [node name="BlackBox" parent="." unique_id=1249540428 instance=ExtResource("3_1bvp3")]
 position = Vector2(211, 82)
 script = ExtResource("4_lquwl")
+
+[node name="GameManager" type="Node" parent="." unique_id=1485045986]
+script = ExtResource("5_lquwl")

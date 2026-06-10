@@ -14,5 +14,10 @@ func _on_body_entered(body):
 		# stop this function here
 		return
 	print ("Black Box touched by:", body.name)
+	
+	# get_node - find this node in the scene tree
+	# .collect_black_box - run this from that previous fetchsd
+	get_node("/root/Main/GameManager").collect_black_box();
+	
 	# delte this node safley
 	queue_free()

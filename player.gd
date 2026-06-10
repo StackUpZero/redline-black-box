@@ -7,7 +7,6 @@ extends CharacterBody2D
 var speed = 200
 
 func _ready():
-		print("Player script is running")
 # func is a piece of code you can call later to do a job
 # better than writing everything inline
 # _physics_process - is a Godot function that runs at the physics update rate
